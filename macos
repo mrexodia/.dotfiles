@@ -1,0 +1,9 @@
+# Local bin
+export PATH="$HOME/.local/bin:$PATH"
+
+# cmkr
+export PATH="$HOME/Projects/cmkr/build:$PATH"
+export CMKR_CACHE=$HOME/.cache/cmkr
+
+# Sublime Merge
+export PATH="$PATH:/Applications/Sublime Merge.app/Contents/SharedSupport/bin"
