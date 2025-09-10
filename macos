@@ -7,3 +7,5 @@ export CMKR_CACHE=$HOME/.cache/cmkr
 
 # Sublime Merge
 export PATH="$PATH:/Applications/Sublime Merge.app/Contents/SharedSupport/bin"
+
+. "$HOME/.cargo/env"
