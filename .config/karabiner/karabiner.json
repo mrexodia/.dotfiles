@@ -223,7 +223,7 @@
                                     "key_code": "s",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "mouse_key": { "vertical_wheel": 32 } }],
+                                "to": [{ "mouse_key": { "vertical_wheel": -32 } }],
                                 "type": "basic"
                             },
                             {
@@ -238,7 +238,7 @@
                                     "key_code": "d",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "mouse_key": { "vertical_wheel": -32 } }],
+                                "to": [{ "mouse_key": { "vertical_wheel": 32 } }],
                                 "type": "basic"
                             },
                             {
