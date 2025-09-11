@@ -8,4 +8,8 @@ export CMKR_CACHE=$HOME/.cache/cmkr
 # Sublime Merge
 export PATH="$PATH:/Applications/Sublime Merge.app/Contents/SharedSupport/bin"
 
+# Rust
 . "$HOME/.cargo/env"
+
+# Go
+export PATH="$HOME/go/bin:$PATH"

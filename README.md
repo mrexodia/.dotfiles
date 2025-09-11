@@ -58,3 +58,9 @@ Git aliases (`git config --global --edit`):
 cargo install --git https://github.com/MitMaro/git-interactive-rebase-tool
 git config --global sequence.editor interactive-rebase-tool
 ```
+
+Git commit message hooks:
+
+```sh
+git config --global core.hookspath ~/.git-hooks
+```

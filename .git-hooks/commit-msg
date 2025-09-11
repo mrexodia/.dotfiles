@@ -1,0 +1,31 @@
+#!/bin/bash
+
+COMMIT_MSG_FILE=$1
+
+# Cross-platform sed function
+sed_inplace() {
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        # macOS (BSD sed)
+        sed -i '' "$@"
+    else
+        # Linux/Git Bash (GNU sed)
+        sed -i "$@"
+    fi
+}
+
+# Remove lines containing these patterns anywhere in the line
+sed_inplace '/Generated with \[Claude Code\]/d' "$COMMIT_MSG_FILE"
+sed_inplace '/via \[Happy\]/d' "$COMMIT_MSG_FILE"
+sed_inplace '/Co-Authored-By: Claude/d' "$COMMIT_MSG_FILE"
+sed_inplace '/Co-Authored-By: Happy/d' "$COMMIT_MSG_FILE"
+
+# Optional: trim trailing whitespace and empty lines at end
+sed_inplace 's/[[:space:]]*$//' "$COMMIT_MSG_FILE"  # Remove trailing whitespace from each line
+
+# Remove trailing empty lines (simpler approach)
+# First, remove all trailing whitespace-only lines
+while [[ -s "$COMMIT_MSG_FILE" ]] && [[ $(tail -n1 "$COMMIT_MSG_FILE") =~ ^[[:space:]]*$ ]]; do
+    sed_inplace '$d' "$COMMIT_MSG_FILE"
+done
+
+exit 0
