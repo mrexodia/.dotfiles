@@ -31,6 +31,8 @@ Applications:
 - [AltTab](https://alt-tab-macos.netlify.app/)
 - [Stats](https://github.com/exelban/stats)
 - [OpenInTerminal](https://github.com/Ji4n1ng/OpenInTerminal)
+- [Keka](https://www.keka.io/en/)
+- [Spokenly](https://spokenly.app/)
 
 [Homebrew](https://brew.sh/) packages:
 
