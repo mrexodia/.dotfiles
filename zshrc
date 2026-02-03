@@ -64,7 +64,6 @@ setopt histignoredups       # Don't save duplicate commands consecutively in his
 setopt histignorespace      # Don't save commands that start with a space
 setopt histverify           # Show the command from history expansion before executing (useful for '!!' etc.)
 setopt incappendhistory     # Add commands to history immediately (not just at shell exit)
-setopt sharehistory         # Share command history between all running zsh sessions
 setopt hist_ignore_all_dups # Don't save any duplicate commands in history
 setopt hist_save_no_dups    # Don't save duplicates to the history file
 setopt hist_find_no_dups    # Don't show duplicates when searching history
